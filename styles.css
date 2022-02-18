@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@300&display=swap');
+/* Fonts
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+	--image: url("images/pexels-mnm-zameer-3308588.jpg");
+	--accent-image: url("images/pexels-dids-4951277.jpg");
+	--color-primary-100: #fff;
+	--color-primary-200: #F8F0DF;
+	--color-primary-300: #302d2d;
+
+	--color-neutral-800: #9D9D9D;
+	
+	--color-accent-300: #9ddde0;
+	--color-accent-500: #79B4B7;
+	--color-accent-800: #417a7d;
+
+	--color-wtb: #000;
+
+	--color-transparent: rgba(255, 255, 255, 0.1);
+
+	--border-radius: 0.5rem;
+}
+
+.darkmode {
+	--image: url("images/pexels-mnm-zameer-3308588.jpg");
+	--accent-image: url("images/pexels-mnm-zameer-3308588.jpg");
+	--color-primary-100: #212121;
+	--color-primary-200: #595959;
+	--color-primary-300: #e6e6e6;
+
+	--color-neutral-800: #0D7377;
+
+	--color-accent-300: #417a7d;
+	--color-accent-500: #79B4B7;
+	--color-accent-800: #9ddde0;
+
+	--color-wtb: #fff;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: var(--color-primary-100);
+	color: var(--color-primary-300);
+	margin: 0;
+	z-index: 2;
+}
+
+header {
+	position: relative;
+	padding-bottom: 7rem;
+	background: var(--image);
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+section {
+	padding: 1.5rem 1rem;
+}
+
+section h1, section h2, section h3{
+	text-align: center;
+}
+
+.sec2 {
+	background: var(--color-accent-300);
+}
+
+nav {
+	background-color: var(--color-transparent);
+	font-size: 1.1rem;
+	padding: 0.7rem;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	-moz-backdrop-filter: blur(5px);
+	overflow: hidden;
+}
+
+nav a {
+	color: inherit;
+	text-decoration: none;
+	padding: 1.2rem;
+}
+
+nav a:hover {
+	color: var(--color-accent-500);
+	text-decoration: underline;
+	transition: 0.3s;
+	transition-duration: 0.2s;
+}
+
+.dark-mode-btn {
+	position: absolute;
+	cursor: pointer;
+	background: var(--color-accent-300);
+	border: none;
+	border-radius: 0.3rem;
+	padding: 0.2rem;
+	color: black;
+	right: 0.5rem;
+	top: 0.5rem;
+	font-size: 0.1rem;
+}
+
+.dark-mode-btn:hover {
+	background: var(--color-accent-500);
+	color: black;
+}
+
+.intro {
+	text-align: center;
+	padding: 0 max(1rem, 5vw);
+}
+
+.intro h1, .intro h2, .intro h3 {
+	font-size: 2rem;
+}
+
+.intro p {
+	font-size: 1.6rem;
+}
+
+.intro .note {
+	font-size: 1rem;
+}
+
+.posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+}
+
+.posts div {
+	margin: 0.5rem;
+}
+
+.posts div img {
+	border-radius: var(--border-radius);
+}
+
+.post-content img {
+	border-radius: var(--border-radius);
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.stuff {
+	background: var(--accent-image);
+	opacity: 0.8;
+}
+
+.stuff .software,
+.stuff .hardware {
+	background: var(--color-transparent);
+	padding: 5rem;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: var(--border-radius);
+	margin: 1rem;
+	color: var(--color-wtb);
+}
+
+/*
+	=======
+	General Styling
+	=======
+*/
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	color: var(--color-accent-800);
+}
+
+a:hover {
+	color: var(--color-accent-500);
+}
+
+h1, h2, h3 {
+	font-size: 1.8rem;
+	z-index: 2;
+}
+
+p, ul {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.25rem;
+}
+
+/*-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;*/
+
+/*
+	=======
+	Media queries
+	=======
+*/
+
+@media (max-width: 23em) {
+	nav a {
+		font-size: 1.05rem;
+		padding: 0.5rem;
+	}
+
+	.posts img {
+		max-width: calc(90vw - 10%);
+	}
+}
+
+@media (max-width: 40em) {
+	section h1, section h2, section h3 {
+		text-align: left;
+	}
+
+	.post-content img {
+		width: 100%;
+	}
+}

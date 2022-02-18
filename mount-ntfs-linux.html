@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nixpedia</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<!-- nav -->
+		<nav id="navbar">
+			<a href="index.html">Home</a>
+
+			<a href="posts.html">Posts</a>
+
+			<a href="#">
+				<button title="Switch to dark/light mode" class="dark-mode-btn" id="drk-toggle" aria-label="Dark Mode Toggling Button">
+					<span class="material-icons-round" id="dark-span">
+						dark_mode
+					</span>
+				</button>
+			</a>
+		</nav>
+		<div class="intro">
+			<h1>How to mount NTFS on Linux</h1>
+		</div>
+	</header>
+	<section class="post-content">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/SyJGNWC8n1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p>NTFS is the filesystem of Windows and if you're migrating from Windows to Linux, this article may be very useful to you because you might have some NTFS external storage drives.</p>
+		<p>In this article, we will show you how to do exactly that!</p>
+
+		<br>
+
+		<p>1. Download the necessary packages:</p>
+		<ul>
+			<li>fuse</li>
+			<li>ntfs-3g</li>
+		</ul>
+		<img src="images/screenshots/mount-ntfs-linux/1.png">
+
+		<br>
+
+		<p>2. Now we'll make the folder in which we are going to mount our NTFS storage device.</p>
+		<img src="images/screenshots/mount-ntfs-linux/2.png">
+
+		<br>
+
+		<p>3. Finally, we'll mount the NTFS filesystem. Replace <code>/dev/sdb1</code> with your device name.</p>
+		<img src="images/screenshots/mount-ntfs-linux/3.png">
+	</section>
+	<!-- footer -->
+</body>
+<script src="scripts.js"></script>
+</html>

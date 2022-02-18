@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nixpedia</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<!-- nav -->
+		<nav id="navbar">
+			<a href="index.html">Home</a>
+
+			<a href="posts.html">Posts</a>
+
+			<a href="#">
+				<button title="Switch to dark/light mode" class="dark-mode-btn" id="drk-toggle" aria-label="Dark Mode Toggling Button">
+					<span class="material-icons-round" id="dark-span">
+						dark_mode
+					</span>
+				</button>
+			</a>
+		</nav>
+		<div class="intro">
+			<h1>"lib: file too short" on Arch Linux</h1>
+			<p>This annoying error is way easier to fix then what you think.</p>
+		</div>
+	</header>
+	<section class="post-content">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/dLQbP6MCsNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p>The reason of this error being produced is because the library file it is talking about is too short or empty. This method can be used to solve any library file too short errors. You can always watch the video guide on YouTube if you have any confusions in following the commands below.</p>
+		<br>
+		<p>1. First, we will search the file name on Google to check what is the name of the library package.</p>
+		<img src="images/screenshots/lib-error-vid/lib-search-google-file-arch.png">
+		<br>
+		<p>2. Then we will update that package.</p>
+		<img src="images/screenshots/lib-error-vid/lib-file-update-arch.png">
+		<br>
+		<p>3. While the package is updating, you might get some errors that will say that some files are already in the filesystem. If you get this error, delete all the files listed in the error.</p>
+		<img src="images/screenshots/lib-error-vid/selecting-name-of-files.png">
+		<img src="images/screenshots/lib-error-vid/deleting-files.png">
+		<br>
+		<p>4. Then update the package again and it should update without any errors.</p>
+		<img src="images/screenshots/lib-error-vid/updating-package.png">
+		<img src="images/screenshots/lib-error-vid/package-updated.png">
+		<br>
+		<p>5. And now, the error is solved!</p>
+		<img src="images/screenshots/lib-error-vid/error-solved.png">
+	</section>
+	<!-- footer -->
+</body>
+<script src="scripts.js"></script>
+</html>
